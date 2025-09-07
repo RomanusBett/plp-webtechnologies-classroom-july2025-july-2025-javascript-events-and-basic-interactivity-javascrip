@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Planets of the Solar System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌍 Planets of Our Solar System</h1>
+    <button id="themeToggle">Toggle Light/Dark Mode</button>
+  </header>
+
+  <main>
+    <section id="planets">
+      <h2>Hover over a planet to learn more</h2>
+      <ul>
+        <li class="planet" data-info="Mercury is the smallest planet and closest to the Sun.">Mercury</li>
+        <li class="planet" data-info="Venus has a thick, toxic atmosphere that traps heat.">Venus</li>
+        <li class="planet" data-info="Earth is our home and the only known planet with life.">Earth</li>
+        <li class="planet" data-info="Mars is known as the Red Planet and may have once had water.">Mars</li>
+        <li class="planet" data-info="Jupiter is the largest planet, with a giant storm called the Great Red Spot.">Jupiter</li>
+        <li class="planet" data-info="Saturn is famous for its stunning ring system.">Saturn</li>
+        <li class="planet" data-info="Uranus rotates on its side and has a blue-green color.">Uranus</li>
+        <li class="planet" data-info="Neptune is the windiest planet, with supersonic winds.">Neptune</li>
+      </ul>
+      <p id="planetInfo">Hover over a planet to see details here...</p>
+    </section>
+
+    <section id="interactive">
+      <h2>Fun with Space!</h2>
+
+      <div class="counterGame">
+        <p>🚀 Launch Counter: <span id="count">0</span></p>
+        <button id="increase">Increase</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <div class="faq">
+        <h3>Frequently Asked Questions</h3>
+        <button class="faq-question">Why is Pluto not a planet?</button>
+        <p class="faq-answer">Pluto was reclassified as a dwarf planet in 2006 because it doesn’t clear its orbit of other debris.</p>
+
+        <button class="faq-question">Which planet is the hottest?</button>
+        <p class="faq-answer">Venus is the hottest planet because of its thick atmosphere trapping heat.</p>
+      </div>
+    </section>
+
+    <section id="signup">
+      <h2>🌌 Join Our Space Club</h2>
+      <form id="spaceForm">
+        <label>Name: <input type="text" id="name"></label>
+        <small class="error" id="nameError"></small><br>
+
+        <label>Email: <input type="text" id="email"></label>
+        <small class="error" id="emailError"></small><br>
+
+        <label>Password: <input type="password" id="password"></label>
+        <small class="error" id="passwordError"></small><br>
+
+        <button type="submit">Sign Up</button>
+      </form>
+      <p id="formSuccess" class="success"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
